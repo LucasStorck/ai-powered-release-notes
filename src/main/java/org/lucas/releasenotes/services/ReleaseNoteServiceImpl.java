@@ -1,12 +1,12 @@
-package org.lucas.notesgenerator.services;
+package org.lucas.releasenotes.services;
 
 import jakarta.transaction.Transactional;
-import org.lucas.notesgenerator.dtos.NoteReleaseUpdateDto;
-import org.lucas.notesgenerator.dtos.ReleaseNoteRequestDto;
-import org.lucas.notesgenerator.dtos.ReleaseNoteResponseDto;
-import org.lucas.notesgenerator.mappers.NoteReleaseMapper;
-import org.lucas.notesgenerator.models.ReleaseNote;
-import org.lucas.notesgenerator.repositories.ReleaseNoteRepository;
+import org.lucas.releasenotes.dtos.NoteReleaseUpdateDto;
+import org.lucas.releasenotes.dtos.ReleaseNoteRequestDto;
+import org.lucas.releasenotes.dtos.ReleaseNoteResponseDto;
+import org.lucas.releasenotes.mappers.NoteReleaseMapper;
+import org.lucas.releasenotes.models.ReleaseNote;
+import org.lucas.releasenotes.repositories.ReleaseNoteRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.UUID;

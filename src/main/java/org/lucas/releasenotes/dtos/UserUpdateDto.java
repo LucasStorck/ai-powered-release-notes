@@ -1,4 +1,4 @@
-package org.lucas.notesgenerator.dtos;
+package org.lucas.releasenotes.dtos;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

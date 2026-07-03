@@ -1,9 +1,9 @@
-package org.lucas.notesgenerator.mappers;
+package org.lucas.releasenotes.mappers;
 
-import org.lucas.notesgenerator.dtos.UserRequestDto;
-import org.lucas.notesgenerator.dtos.UserResponseDto;
-import org.lucas.notesgenerator.dtos.UserUpdateDto;
-import org.lucas.notesgenerator.models.User;
+import org.lucas.releasenotes.dtos.UserRequestDto;
+import org.lucas.releasenotes.dtos.UserResponseDto;
+import org.lucas.releasenotes.dtos.UserUpdateDto;
+import org.lucas.releasenotes.models.User;
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;

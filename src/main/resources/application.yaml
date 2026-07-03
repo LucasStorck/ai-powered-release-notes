@@ -1,10 +1,10 @@
 spring:
   application:
-    name: notes-generator
+    name: release-notes
 
   # Database Configs
   datasource:
-    url: jdbc:postgresql://localhost:5432/notes_generator
+    url: jdbc:postgresql://localhost:5432/release_notes
     username: postgres
     password: ""
 

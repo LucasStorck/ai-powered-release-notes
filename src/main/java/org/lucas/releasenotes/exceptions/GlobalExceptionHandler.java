@@ -1,4 +1,4 @@
-package org.lucas.notesgenerator.exceptions;
+package org.lucas.releasenotes.exceptions;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;

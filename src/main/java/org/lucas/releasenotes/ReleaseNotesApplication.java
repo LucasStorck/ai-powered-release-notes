@@ -1,13 +1,13 @@
-package org.lucas.notesgenerator;
+package org.lucas.releasenotes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NotesGeneratorApplication {
+public class ReleaseNotesApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(NotesGeneratorApplication.class, args);
+    SpringApplication.run(ReleaseNotesApplication.class, args);
   }
 
 }

@@ -1,4 +1,4 @@
-package org.lucas.notesgenerator.exceptions;
+package org.lucas.releasenotes.exceptions;
 
 import java.time.LocalDateTime;
 

@@ -9,9 +9,9 @@
     <relativePath/> </parent>
 
   <groupId>org.lucas</groupId>
-  <artifactId>notes-generator</artifactId>
+  <artifactId>release-notes</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>notes-generator</name>
+  <name>release-notes</name>
   <description>AI-Powered Release Notes Generator</description>
 
   <properties>

@@ -1,11 +1,11 @@
-package org.lucas.notesgenerator.services;
+package org.lucas.releasenotes.services;
 
-import org.lucas.notesgenerator.dtos.UserRequestDto;
-import org.lucas.notesgenerator.dtos.UserResponseDto;
-import org.lucas.notesgenerator.dtos.UserUpdateDto;
-import org.lucas.notesgenerator.mappers.UserMapper;
-import org.lucas.notesgenerator.models.User;
-import org.lucas.notesgenerator.repositories.UserRepository;
+import org.lucas.releasenotes.dtos.UserRequestDto;
+import org.lucas.releasenotes.dtos.UserResponseDto;
+import org.lucas.releasenotes.dtos.UserUpdateDto;
+import org.lucas.releasenotes.mappers.UserMapper;
+import org.lucas.releasenotes.models.User;
+import org.lucas.releasenotes.repositories.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

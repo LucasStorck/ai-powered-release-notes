@@ -1,8 +1,8 @@
-package org.lucas.notesgenerator.services;
+package org.lucas.releasenotes.services;
 
-import org.lucas.notesgenerator.dtos.UserRequestDto;
-import org.lucas.notesgenerator.dtos.UserResponseDto;
-import org.lucas.notesgenerator.dtos.UserUpdateDto;
+import org.lucas.releasenotes.dtos.UserRequestDto;
+import org.lucas.releasenotes.dtos.UserResponseDto;
+import org.lucas.releasenotes.dtos.UserUpdateDto;
 
 import java.util.List;
 import java.util.UUID;

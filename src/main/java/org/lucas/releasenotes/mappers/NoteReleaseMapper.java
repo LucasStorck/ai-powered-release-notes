@@ -1,9 +1,9 @@
-package org.lucas.notesgenerator.mappers;
+package org.lucas.releasenotes.mappers;
 
-import org.lucas.notesgenerator.dtos.NoteReleaseUpdateDto;
-import org.lucas.notesgenerator.dtos.ReleaseNoteRequestDto;
-import org.lucas.notesgenerator.dtos.ReleaseNoteResponseDto;
-import org.lucas.notesgenerator.models.ReleaseNote;
+import org.lucas.releasenotes.dtos.NoteReleaseUpdateDto;
+import org.lucas.releasenotes.dtos.ReleaseNoteRequestDto;
+import org.lucas.releasenotes.dtos.ReleaseNoteResponseDto;
+import org.lucas.releasenotes.models.ReleaseNote;
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;

@@ -1,4 +1,4 @@
-package org.lucas.notesgenerator.models;
+package org.lucas.releasenotes.models;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;

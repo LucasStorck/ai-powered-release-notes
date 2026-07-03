@@ -1,4 +1,4 @@
-package org.lucas.notesgenerator.exceptions;
+package org.lucas.releasenotes.exceptions;
 
 public class MethodArgumentNotValidException extends RuntimeException {
   public MethodArgumentNotValidException(String message) {

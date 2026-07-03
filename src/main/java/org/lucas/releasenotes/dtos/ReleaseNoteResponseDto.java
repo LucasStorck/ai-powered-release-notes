@@ -1,6 +1,6 @@
-package org.lucas.notesgenerator.dtos;
+package org.lucas.releasenotes.dtos;
 
-import org.lucas.notesgenerator.models.User;
+import org.lucas.releasenotes.models.User;
 
 import java.time.LocalDateTime;
 

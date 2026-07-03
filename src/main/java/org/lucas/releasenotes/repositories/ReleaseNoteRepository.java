@@ -1,6 +1,6 @@
-package org.lucas.notesgenerator.repositories;
+package org.lucas.releasenotes.repositories;
 
-import org.lucas.notesgenerator.models.ReleaseNote;
+import org.lucas.releasenotes.models.ReleaseNote;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.UUID;

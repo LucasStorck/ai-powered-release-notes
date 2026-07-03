@@ -1,10 +1,10 @@
-package org.lucas.notesgenerator;
+package org.lucas.releasenotes;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NotesGeneratorApplicationTests {
+class ReleaseNotesApplicationTests {
 
   @Test
   void contextLoads() {
