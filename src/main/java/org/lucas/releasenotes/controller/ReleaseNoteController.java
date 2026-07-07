@@ -1,7 +1,7 @@
 package org.lucas.releasenotes.controller;
 
 import jakarta.validation.Valid;
-import org.lucas.releasenotes.dtos.NoteReleaseUpdateDto;
+import org.lucas.releasenotes.dtos.ReleaseNoteUpdateDto;
 import org.lucas.releasenotes.dtos.ReleaseNoteRequestDto;
 import org.lucas.releasenotes.dtos.ReleaseNoteResponseDto;
 import org.lucas.releasenotes.services.ReleaseNoteService;
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("api/v1/release-notes")
+@RequestMapping("/api/v1/release-notes")
 public class ReleaseNoteController {
 
   final private ReleaseNoteService releaseNoteService;
@@ -22,7 +22,8 @@ public class ReleaseNoteController {
   }
 
   @PostMapping
-  public ResponseEntity<ReleaseNoteResponseDto> createReleaseNote(@Valid @RequestBody ReleaseNoteRequestDto releaseNoteRequestDto) {
+  public ResponseEntity<ReleaseNoteResponseDto> createReleaseNote(
+      @Valid @RequestBody ReleaseNoteRequestDto releaseNoteRequestDto) {
     return ResponseEntity.ok(releaseNoteService.createReleaseNote(releaseNoteRequestDto));
   }
 
@@ -38,12 +39,10 @@ public class ReleaseNoteController {
 
   @PutMapping("/{id}")
   public ResponseEntity<ReleaseNoteResponseDto> updateReleaseNote(
-          @PathVariable UUID id,
-          @Valid @RequestBody NoteReleaseUpdateDto noteReleaseUpdateDto
-  ) {
+      @PathVariable UUID id,
+      @Valid @RequestBody ReleaseNoteUpdateDto noteReleaseUpdateDto) {
     return ResponseEntity.ok(releaseNoteService.updateReleaseNote(id, noteReleaseUpdateDto));
   }
-
 
   @DeleteMapping("/{id}")
   public ResponseEntity<Void> deleteReleaseNote(@PathVariable UUID id) {

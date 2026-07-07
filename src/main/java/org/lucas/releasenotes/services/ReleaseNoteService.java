@@ -1,6 +1,6 @@
 package org.lucas.releasenotes.services;
 
-import org.lucas.releasenotes.dtos.NoteReleaseUpdateDto;
+import org.lucas.releasenotes.dtos.ReleaseNoteUpdateDto;
 import org.lucas.releasenotes.dtos.ReleaseNoteRequestDto;
 import org.lucas.releasenotes.dtos.ReleaseNoteResponseDto;
 
@@ -15,7 +15,7 @@ public interface ReleaseNoteService {
 
   List<ReleaseNoteResponseDto> getAllReleaseNotes();
 
-  ReleaseNoteResponseDto updateReleaseNote(UUID id, NoteReleaseUpdateDto noteReleaseUpdateDto);
+  ReleaseNoteResponseDto updateReleaseNote(UUID id, ReleaseNoteUpdateDto noteReleaseUpdateDto);
 
   void deleteReleaseNote(UUID id);
 
