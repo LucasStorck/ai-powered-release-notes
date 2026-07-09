@@ -24,8 +24,8 @@ public class ReleaseNoteServiceImpl implements ReleaseNoteService {
   final private UserRepository userRepository;
 
   public ReleaseNoteServiceImpl(ReleaseNoteRepository releaseNoteRepository, ReleaseNoteMapper releaseNoteMapper,
-      GitPatchParserService gitPatchParserService, AISummarizerService aISummarizerService,
-      UserRepository userRepository) {
+                                GitPatchParserService gitPatchParserService, AISummarizerService aISummarizerService,
+                                UserRepository userRepository) {
     this.releaseNoteRepository = releaseNoteRepository;
     this.releaseNoteMapper = releaseNoteMapper;
     this.gitPatchParserService = gitPatchParserService;
@@ -38,13 +38,11 @@ public class ReleaseNoteServiceImpl implements ReleaseNoteService {
   public ReleaseNoteResponseDto createReleaseNote(ReleaseNoteRequestDto releaseNoteRequestDto) {
 
     String diffClean = gitPatchParserService.cleanPatch(releaseNoteRequestDto.rawPatch());
-
     String summary = aISummarizerService.summarize(diffClean);
-
     String username = org.springframework.security.core.context.SecurityContextHolder.getContext().getAuthentication()
-        .getName();
+            .getName();
     org.lucas.releasenotes.models.User user = userRepository.findByUsername(username)
-        .orElseThrow(() -> new ResourceNotFoundException("User not found"));
+            .orElseThrow(() -> new ResourceNotFoundException("User not Found"));
 
     ReleaseNote releaseNote = releaseNoteMapper.toEntity(releaseNoteRequestDto);
 
@@ -60,23 +58,23 @@ public class ReleaseNoteServiceImpl implements ReleaseNoteService {
   @Override
   public ReleaseNoteResponseDto getReleaseNoteById(UUID id) {
     ReleaseNote releaseNote = releaseNoteRepository.findById(id)
-        .orElseThrow(() -> new ResourceNotFoundException("Note not Found"));
+            .orElseThrow(() -> new ResourceNotFoundException("Note not Found"));
     return releaseNoteMapper.toReleaseNoteResponseDto(releaseNote);
   }
 
   @Override
   public List<ReleaseNoteResponseDto> getAllReleaseNotes() {
     return releaseNoteRepository.findAll()
-        .stream()
-        .map(releaseNoteMapper::toReleaseNoteResponseDto)
-        .toList();
+            .stream()
+            .map(releaseNoteMapper::toReleaseNoteResponseDto)
+            .toList();
   }
 
   @Override
   @Transactional
   public ReleaseNoteResponseDto updateReleaseNote(UUID id, ReleaseNoteUpdateDto noteReleaseUpdateDto) {
     ReleaseNote releaseNote = releaseNoteRepository.findById(id)
-        .orElseThrow(() -> new ResourceNotFoundException("Note not Found"));
+            .orElseThrow(() -> new ResourceNotFoundException("Note not Found"));
     releaseNoteMapper.updateReleaseNote(noteReleaseUpdateDto, releaseNote);
     ReleaseNote savedReleaseNote = releaseNoteRepository.save(releaseNote);
     return releaseNoteMapper.toReleaseNoteResponseDto(savedReleaseNote);

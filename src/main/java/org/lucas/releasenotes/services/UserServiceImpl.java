@@ -41,7 +41,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
             .orElseThrow(() -> new UsernameNotFoundException("User not Found with Username: " + username));
   }
 
-
   @Override
   @Transactional
   public UserResponseDto createUser(UserRequestDto userRequestDto) {
