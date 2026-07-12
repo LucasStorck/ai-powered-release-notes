@@ -66,7 +66,7 @@ SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/release_notes
 SPRING_DATASOURCE_USERNAME=postgres
 SPRING_DATASOURCE_PASSWORD=sua_senha
 
-# AI Provider (ex: OpenAI)
+# AI Provider
 AI_API_KEY=sk-...
 ```
 
